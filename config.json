@@ -1,0 +1,10 @@
+{
+  "source_path": "./content/",
+  "target_path": "./docs/",
+  "asset_path": "./assets/",
+  "template_path": "./templates/",
+  "theme_path": "./themes/",
+  "theme": "shitty-default.css",
+  "port": 8080,
+  "site_name": "SSSG - The Small Shitty (Static) Site Generator"
+}
