@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>README</title>
+  <link rel="stylesheet" href="/assets/index.css">
+</head>
+<body>
+  <header class="title-bar">
+      <div class="title-bar__nav">
+          <a href="/">SSSG - The Small Shitty (Static) Site Generator</a>
+      </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar">
+      <ul class="sidebar__list">
+      <h2 class="sidebar__heading">Documentation</h2><li><a href="/docs/Documentation/README.html">README</a></li><li><a href="/docs/Documentation/tutorial.html">Tutorial</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <h1>README</h1>
+<h1>SSSG 💩</h1>
+<p>The Small, Shitty, (static) Site Generator</p>
+<h2>Motivation</h2>
+<p>There are a bunch of wonderful site generators out there, but I want one that makes writing and publishing the focus. No fluff, no features, just a way to take your thoughts and push it to your very own website. It was the dream of the internet when I was young, and it would be nice to capture that creativity without any crap coming with it. Those sites I made as a kid were shitty. This site generator is also shitty, and I love it dearly. This was created with my kids in mind. When they are old enough to write, they can make their own sites. As they learn more, they can accomplish more.</p>
+<h2>Quick Start</h2>
+<ul>
+<li>Requirements:
+<ul>
+<li>go 1.26+</li>
+<li>goldmark - <code>go get github.com/yuin/goldmark</code></li>
+</ul>
+</li>
+<li>Clone the repo and <code>go build .</code></li>
+<li>See 'Configuration' for first time setup</li>
+</ul>
+<h2>Usage</h2>
+<p><code>sssg &lt;command&gt; -&lt;options&gt; &lt;parameters&gt;</code></p>
+<ul>
+<li><code>sssg init</code>
+<ul>
+<li>initialize a site project in the current directory with application default configuration</li>
+</ul>
+</li>
+<li><code>sssg build</code>
+<ul>
+<li>no flags - build all markdown in the content directory</li>
+<li><code>-f &lt;filename.md&gt;</code> - build only the specified markdown file</li>
+</ul>
+</li>
+<li><code>sssg config</code>
+<ul>
+<li><code>set &lt;key&gt; &lt;value&gt;</code> - modify config.json through via cli</li>
+<li><code>get &lt;key&gt;</code> - print config value to the console</li>
+</ul>
+</li>
+<li><code>sssg serve</code>
+<ul>
+<li>no flags - serve your target directory over http on the port specified in config.json</li>
+<li><code>-p &lt;port-num&gt;</code> - override the default port</li>
+<li><code>-d</code> - start server deteched from current shell session</li>
+</ul>
+</li>
+<li><code>ssssg theme</code>
+<ul>
+<li>&lt;theme-name.css&gt; - change themes live - no server restart requried</li>
+</ul>
+</li>
+<li><code>sssg help &lt;command&gt;</code>
+<ul>
+<li>no params - list available commands with description</li>
+<li><code>&lt;command&gt;</code> - show command usage</li>
+</ul>
+</li>
+</ul>
+<h2>Configuration</h2>
+<p>config.json - modify directly or edit single values via cli. See &quot;config&quot; command.</p>
+<ul>
+<li>&quot;source_path&quot; - the source directory for your markdown files</li>
+<li>&quot;target_path&quot; - the destination directory for generated html</li>
+<li>&quot;assets_path&quot; - directory for images and other content</li>
+<li>&quot;template_path&quot; - directory for html templates</li>
+<li>&quot;theme_path&quot; - css directory to use</li>
+<li>&quot;theme&quot; - css file</li>
+<li>&quot;port&quot; - default http port</li>
+</ul>
+<h2>Contributing</h2>
+<ul>
+<li>Glad to take contributions. Please fork and sumbit a pull request on the main branch.</li>
+<li>This was made with learning in mind. For that reason, no LLM contributions.
+<ul>
+<li>If you wish to extend with LLMs, no judgement, just please fork.</li>
+</ul>
+</li>
+<li>If it helps you or your children learn something, it will have been successful.</li>
+</ul>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Small Shitty Software Co. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
