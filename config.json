@@ -7,5 +7,5 @@
   "theme": "shitty-default.css",
   "port": 8080,
   "site_name": "SSSG - The Small Shitty (Static) Site Generator",
-  "base_path": "/"
+  "base_path": "/sssg-site/"
 }
